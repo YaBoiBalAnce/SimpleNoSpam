@@ -1,6 +1,0 @@
-name: SimpleNoSpam
-description: Keeps Players From Spammming!
-author: BalAnce
-version: 0.1
-main: sns\main
-api: 1.12.0
