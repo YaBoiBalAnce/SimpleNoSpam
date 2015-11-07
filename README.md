@@ -2,7 +2,6 @@
 Simple NoSpam Plugin For Pocketmine. 
 
 ToDO:
--add config
-
-No none bugs.
+- no todos as of now
+No known bugs as of now.
 Part of my 10 Min plugin ideas.
