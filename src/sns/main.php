@@ -40,10 +40,9 @@ class main extends PluginBase implements Listener{
 		}
 		else if (!in_array($ev->getPlayer()->getName(), $this->talked)){
 			$bw = $this->config->getAll();
-			$msg = explode(" ",$ev->getMessage());
-			foreach ($msg as $word){
+			$msg = $ev->getMessage();
 				foreach ($bw['Blocked words'] as $blw){
-					if ($blw === strtolower($word)){
+					if (strpos($msg, $blw) !== false){
 						if ($bw['replace words'] === "true"){
 							$ev->setMessage($bw['Replacement Message']);
 							$ev->getPlayer()->sendMessage("[AnitSpam] You are not allowed to say the word ".$blw);
@@ -55,7 +54,6 @@ class main extends PluginBase implements Listener{
 						}
 					}
 				}
-			}
 		 	array_push($this->talked, $ev->getPlayer()->getName());
 		 	$task = new allowtalk($this, $ev->getPlayer());
 		 	$this->getServer()->getScheduler()->scheduleDelayedTask($task, 20* $bw['interval']);
