@@ -1,8 +1,18 @@
 # SimpleNoSpam
-Simple NoSpam Plugin For Pocketmine. 
+SimpleNoSpam Plugin For Pocketmine. 
 
-ToDO:
-- no todos as of now
+This plugin allows you to block out swear words and spam in your server chat!
 
-No known bugs as of now.
-Part of my 10 Min plugin ideas.
+# Features
+ - Customizeable Messages
+ - Warning system
+ - Swear word filter with tons of words already added
+ - Very fast spam filter
+
+
+# Authors
+
+Originally made by BalAnce, rewritten and perfected by XFuryMCPE
+
+
+Enjoy!
