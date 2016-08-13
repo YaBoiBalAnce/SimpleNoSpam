@@ -85,7 +85,7 @@ class Main extends PluginBase implements Listener{
 			}
 		}
 		foreach($this->config->get("blocked-words") as $bw){
-			if(strpos($msg, $bw) != false){
+			if(strpos($m, $bw) != false){
 				if($this->config->get("replace-words") == true){
 					$e->setMessage($this->config->get("replacement-message"));
 					$p->sendMessage($this->config->get("swear-block-message"));
